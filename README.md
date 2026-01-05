@@ -20,13 +20,15 @@
 
   > import \* as score from 'scoreboard-support';
 
+  > scripts ファイル内に dist ファイルを作成
+
   package.json に次のように記入
 
 ```
   {
     vvvvv
     "scripts": {
-      "build": "esbuild scripts/main.js --bundle --outfile=scripts/dist/bundle.js --external:@minecraft/server --external:@minecraft/server-ui"
+      "build": "esbuild scripts/(あなたのjsファイル名) --bundle --outfile=scripts/dist/bundle.js --format=esm --external:@minecraft/server --external:@minecraft/server-ui"
     },
     ^^^^^
 
