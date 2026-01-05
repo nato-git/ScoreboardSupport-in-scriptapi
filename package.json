@@ -16,6 +16,6 @@
   "author": "nato-git",
   "license": "MIT",
   "peerDependencies": {
-    "@minecraft/server": "^1.13.0"
+    "@minecraft/server": "*"
   }
 }
