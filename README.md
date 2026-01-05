@@ -15,6 +15,7 @@
 - 初めての場合 <br>
 
   > npm install https://github.com/nato-git/ScoreboardSupport-in-scriptapi.git
+
   > npm install --save-dev esbuild
 
   > import \* as score from 'scoreboard-support';
@@ -25,7 +26,7 @@
   {
     vvvvv
     "scripts": {
-      "build": "esbuild scripts/(あなたの js ファイル名).js --bundle --outfile=scripts/dist/bundle.js --external:@minecraft/server"
+      "build": "esbuild scripts/main.js --bundle --outfile=scripts/dist/bundle.js --external:@minecraft/server --external:@minecraft/server-ui"
     },
     ^^^^^
 
