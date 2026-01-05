@@ -17,6 +17,9 @@
 - アップデートをする場合 <br>
   > npm update scoreboard-support
 
+- 終了後
+  > npm run build
+
 ---
 
 ### 内容
