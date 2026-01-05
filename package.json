@@ -1,5 +1,21 @@
 {
-  "dependencies": {
-    "@minecraft/server": "^2.4.0"
+  "name": "scoreboard-support",
+  "version": "1.0.0",
+  "description": "Minecraft Bedrock Script API用スコアボード操作ライブラリ",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "index.d.ts"
+  ],
+  "keywords": [
+    "minecraft",
+    "bedrock",
+    "script-api",
+    "scoreboard"
+  ],
+  "author": "nato-git",
+  "license": "MIT",
+  "peerDependencies": {
+    "@minecraft/server": "^1.13.0"
   }
 }
