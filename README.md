@@ -14,23 +14,27 @@
 
 - 初めての場合 <br>
 
-  > npm install https://github.com/nato-git/ScoreboardSupport-in-scriptapi.git
+  ```cmd
+  npm install https://github.com/nato-git/ScoreboardSupport-in-scriptapi.git
+  ```
 
-  > npm install --save-dev esbuild
+  ```cmd
+  npm install --save-dev esbuild
+  ```
 
-  > import \* as score from 'scoreboard-support';
+  ```js
+  import * as score from 'scoreboard-support';
+  ```
 
-  > scripts ファイル内に dist ファイルを作成
+  scripts ファイル内に dist ファイルを作成
 
   package.json に次のように記入
 
-```
+  ```json
   {
-    vvvvv
     "scripts": {
-      "build": "esbuild scripts/(あなたのjsファイル名) --bundle --outfile=scripts/dist/bundle.js --format=esm --external:@minecraft/server --external:@minecraft/server-ui"
+      "build": "esbuild scripts/(あなたのjsファイル名) --bundle --outfile=scripts/dist/bundle.js --format=esm -- external:@minecraft/server --external:@minecraft/server-ui"
     },
-    ^^^^^
 
     "dependencies": {
       "@minecraft/server": "^2.4.0",
@@ -41,26 +45,32 @@
       "esbuild": "^0.27.2"
     }
   }
-```
+  ```
 
 - アップデートをする場合 <br>
 
-  > npm update scoreboard-support
+  ```cmd
+  npm update scoreboard-support
+  ```
 
 - 終了後
-  > npm run build
+  ```cmd
+  npm run build
+  ```
 
 ---
 
 ### 使用例
 
-```
+```js
 score.add_score('apple', player, 5);
-//player に apple を 5 加算
-
-score.get_score('banana', player);
-//player の banana スコアの数値を取得
 ```
+player に apple を 5 加算
+
+```js
+score.get_score('banana', player);
+```
+player の banana スコアの数値を取得
 
 ---
 
@@ -75,4 +85,4 @@ score.get_score('banana', player);
 
 ### 更新日
 
-2026/1/6
+2026/11/21
